@@ -30,6 +30,7 @@ Route::get('/success',[
     'as'=>'success'
 ]);
 
+
 /*
 Route::get('/registration',[
    'uses'=>'AppController@getregistration',

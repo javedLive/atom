@@ -39,14 +39,15 @@
                             	<p>
                                 <strong style="color:#fff;">আপনি যে কোর্সটি Online এ করেত চান তা নিম্ন বর্ণীত কোর্স হতে নির্বাচন করুন</strong></br>
                                 <ul class="courses">
-                                    
-                                   <li> <a  href="{{route('registration',['course_id' => '1'])}}">IELTS</a> </li>
-                                   <li> <a href="{{route('registration',['course_id' => '2'])}}" >BCS</a> </li>
-                                    <li><a  href="{{route('registration',['course_id' => '3'])}}">University Admission</a></li> 
-                                    <li><a  href="{{route('registration',['course_id' => '4'])}}">Spoken + Writing</a> </li>
-                                    <li><a  href="{{route('registration',['course_id' => '5'])}}">Easy Spoken (Regular Batch)</a></li> 
-                                    <li><a  href="{{route('registration',['course_id' => '6'])}}">Spoken + Writing</a></li> 
-                               
+                           
+                                  
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('1') ])}}">IELTS</a> </li> 
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('2') ])}}">BCS</a> </li> 
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('3') ])}}">University Admission</a> </li> 
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('4') ])}}">Spoken + Writing</a> </li> 
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('5') ])}}">Easy Spoken (Regular Batch)</a> </li> 
+                           <li> <a  href="{{route('registration',['course_id' => Crypt::encrypt('6') ])}}">Spoken + Writing</a> </li> 
+                                 
                                    
                                         
                                   

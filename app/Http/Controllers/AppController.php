@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\User;
+use Crypt;
 
 class AppController extends Controller
 {
    public function getregistration($course_id)
     {
      //  $course_id= Input::get();
+        $course_id = Crypt::decrypt($course_id);    
         return view('index')->with('course_id',$course_id);
        //  return view('index');
     }
